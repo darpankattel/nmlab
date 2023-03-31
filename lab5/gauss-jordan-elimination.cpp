@@ -77,7 +77,7 @@ class System {
     Solution get_solution_elimination() {
         for (int j = 0; j < n; j++) {
             for (int i = 0; i < n; i++) {
-                if (i <= j)
+                if (i >= j)
                     continue;
                 if (abs(problem[j][j]) <= TOLERANCE)
                     exit(0);
